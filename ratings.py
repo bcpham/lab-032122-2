@@ -24,10 +24,7 @@ def get_restaurant_ratings():
         #print(sorted(restaurant_name))
     #print(restaurant_ratings)
 
-        for restaurant_name, rating in restaurant_ratings.items():
+        for restaurant_name, rating in sorted(restaurant_ratings.items()):
             print(f'{restaurant_name} is rated at {rating}.')
             
-
-
 get_restaurant_ratings()
-#["Florean Fortescue's Ice Cream Parlour", '4']
